@@ -1,0 +1,292 @@
+/* Custom CSS for BFT Learning Path */
+/* Print-friendly and high-contrast mode support */
+
+/* Print-friendly styles */
+@media print {
+  /* Hide navigation for cleaner prints */
+  .md-header,
+  .md-sidebar,
+  .md-footer {
+    display: none !important;
+  }
+
+  /* Optimize content for printing */
+  body {
+    font-size: 12pt;
+    line-height: 1.5;
+  }
+
+  /* Ensure diagrams fit on page */
+  svg,
+  .mermaid,
+  img {
+    max-width: 100%;
+    page-break-inside: avoid;
+  }
+
+  /* Avoid breaking code blocks */
+  pre,
+  code {
+    page-break-inside: avoid;
+    white-space: pre-wrap;
+  }
+
+  /* Show link URLs for references */
+  a[href]:after {
+    content: " (" attr(href) ")";
+    font-size: 0.8em;
+    color: #666;
+  }
+
+  /* Avoid breaking headings */
+  h1, h2, h3, h4, h5, h6 {
+    page-break-after: avoid;
+  }
+
+  /* Avoid breaking list items */
+  li {
+    page-break-inside: avoid;
+  }
+}
+
+/* High contrast mode (manual toggle or system preference) */
+@media (prefers-contrast: high) {
+  :root {
+    --md-primary-fg-color: #000;
+    --md-primary-bg-color: #fff;
+    --md-accent-fg-color: #00f;
+  }
+
+  body {
+    background: #fff;
+    color: #000;
+  }
+
+  a {
+    color: #00f;
+    text-decoration: underline;
+  }
+
+  /* Ensure sufficient contrast for diagrams */
+  svg text,
+  .mermaid text {
+    fill: #000 !important;
+    stroke: none !important;
+  }
+
+  svg path,
+  .mermaid path {
+    stroke: #000 !important;
+  }
+}
+
+/* Accessibility improvements */
+/* Skip to main content link (keyboard navigation) */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #000;
+  color: #fff;
+  padding: 8px;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* Improve focus indicators */
+a:focus,
+button:focus,
+input:focus,
+textarea:focus,
+select:focus,
+details:focus {
+  outline: 3px solid var(--md-accent-fg-color);
+  outline-offset: 2px;
+}
+
+/* Ensure interactive diagrams have focus indicators */
+.interactive-diagram:focus,
+svg:focus {
+  outline: 3px solid var(--md-accent-fg-color);
+  outline-offset: 4px;
+}
+
+/* Checkpoint styling */
+.checkpoint {
+  background: var(--md-code-bg-color);
+  border-left: 4px solid var(--md-accent-fg-color);
+  padding: 1em;
+  margin: 1em 0;
+  border-radius: 4px;
+}
+
+.checkpoint summary {
+  cursor: pointer;
+  font-weight: bold;
+  user-select: none;
+}
+
+.checkpoint summary:hover {
+  color: var(--md-accent-fg-color);
+}
+
+.checkpoint-feedback {
+  margin-top: 0.5em;
+  padding: 0.5em;
+  background: var(--md-admonition-bg-color);
+  border-radius: 4px;
+}
+
+/* Exercise styling */
+.exercise {
+  background: var(--md-admonition-bg-color);
+  border-left: 4px solid var(--md-primary-fg-color);
+  padding: 1em;
+  margin: 1em 0;
+  border-radius: 4px;
+}
+
+.exercise-hint {
+  font-style: italic;
+  color: var(--md-default-fg-color--light);
+  margin-top: 0.5em;
+}
+
+/* Glossary term hover (future enhancement) */
+.glossary-term {
+  border-bottom: 1px dotted var(--md-default-fg-color--light);
+  cursor: help;
+  text-decoration: none;
+}
+
+.glossary-term:hover {
+  border-bottom-color: var(--md-accent-fg-color);
+}
+
+/* Diagram captions */
+figcaption {
+  font-size: 0.9em;
+  font-style: italic;
+  color: var(--md-default-fg-color--light);
+  text-align: center;
+  margin-top: 0.5em;
+}
+
+/* Responsive diagrams */
+svg,
+.mermaid {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Interactive visualization container */
+.interactive-viz {
+  border: 1px solid var(--md-default-fg-color--lighter);
+  border-radius: 4px;
+  padding: 1em;
+  margin: 1em 0;
+  background: var(--md-code-bg-color);
+}
+
+.interactive-viz-controls {
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid var(--md-default-fg-color--lighter);
+}
+
+/* Module navigation breadcrumbs */
+.module-nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 2em 0;
+  padding: 1em;
+  background: var(--md-code-bg-color);
+  border-radius: 4px;
+}
+
+.module-nav a {
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.module-nav a:hover {
+  text-decoration: underline;
+}
+
+/* Code block improvements */
+.highlight {
+  border-radius: 4px;
+  overflow-x: auto;
+}
+
+/* Table improvements */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1em 0;
+}
+
+th,
+td {
+  border: 1px solid var(--md-default-fg-color--lightest);
+  padding: 0.75em;
+  text-align: left;
+}
+
+th {
+  background: var(--md-code-bg-color);
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background: var(--md-code-bg-color);
+}
+
+/* Ensure proper spacing for admonitions */
+.admonition {
+  margin: 1.5em 0;
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+  /* Ensure diagrams are readable on mobile */
+  svg,
+  .mermaid {
+    font-size: 12px;
+  }
+
+  /* Adjust table font size */
+  table {
+    font-size: 0.9em;
+  }
+
+  /* Reduce padding on mobile */
+  .checkpoint,
+  .exercise,
+  .interactive-viz {
+    padding: 0.75em;
+  }
+}
+
+/* Dark mode adjustments */
+[data-md-color-scheme="slate"] {
+  /* Ensure diagrams remain readable in dark mode */
+  svg text,
+  .mermaid text {
+    fill: #fff;
+  }
+
+  svg path,
+  .mermaid path {
+    stroke: #aaa;
+  }
+
+  /* Adjust table borders for dark mode */
+  th,
+  td {
+    border-color: #444;
+  }
+}
