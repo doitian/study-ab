@@ -359,11 +359,14 @@ Replicas 1, 2, 3: Verify preCommitQC → Commit "tx_batch_42" → Execute transa
 ```
 
 **Message Count**: 
-- Prepare: 4 (1 propose + 3 votes)
-- Prepare broadcast: 4 (prepareQC to all)
-- Pre-commit: 3 votes
-- Pre-commit broadcast: 4 (preCommitQC to all)
-- **Total: 15 messages** (vs. 32 messages in PBFT with 4 replicas)
+- Prepare propose: 4 messages (leader → all 4 replicas)
+- Prepare votes: 3 messages (3 honest replicas → leader; Byzantine replica 4 doesn't vote)
+- Prepare QC broadcast: 4 messages (leader → all 4 replicas with prepareQC)
+- Pre-commit votes: 3 messages (3 honest replicas → leader)
+- Pre-commit QC broadcast: 4 messages (leader → all 4 replicas with preCommitQC)
+- **Total: 18 messages in this execution** (vs. 32 messages in PBFT with 4 replicas)
+
+**Note**: The theoretical O(n) analysis assumes all n replicas respond. In practice, the leader only needs 2f+1 responses, so Byzantine replicas not responding doesn't affect correctness, only the exact message count for this specific execution.
 
 ---
 

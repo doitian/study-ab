@@ -147,10 +147,14 @@ def on_receive_qc(qc):
 
 **HotStuff still uses timeouts, but only for detecting failures, not for normal progress.**
 
+**Key Distinction**:
+- **PBFT's fixed timeout**: Pre-configured constant value (e.g., T = 5 seconds) that never changes
+- **HotStuff's adaptive timeout**: Dynamically adjusts based on observed network conditions (e.g., 3× recent average delay)
+
 **Adaptive Timeout Mechanism**:
 1. Replica expects to receive a new proposal or QC periodically
 2. If no messages received for some time, suspect leader failure
-3. Timeout can be **adaptive** (e.g., exponential backoff)
+3. Timeout **adapts** based on network observations (e.g., exponential backoff, moving average)
 4. Timeout only affects **failure detection**, not normal-case latency
 
 **Example**:

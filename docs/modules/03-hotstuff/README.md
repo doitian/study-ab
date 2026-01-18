@@ -85,7 +85,7 @@ Complete the [Checkpoint](checkpoint.md) to verify your understanding before mov
 ## 📚 Additional Resources
 
 - **Primary Reference**: [HotStuff 2.0 - Decentralized Thoughts](https://decentralizedthoughts.github.io/2023-04-01-hotstuff-2/)
-- **Original Paper**: [HotStuff: BFT Consensus in the Lens of Blockchain](../../resources/references.md#hotstuff-paper) (Yin et al., 2019)
+- **Original Paper**: [HotStuff: BFT Consensus in the Lens of Blockchain](../../resources/references.md#hotstuff-paper) (Yin et al., PODC 2018)
 - **Cached Article**: [Local copy](../../resources/cached-articles/hotstuff-2-decentralized-thoughts.md) (fallback if online version unavailable)
 
 ---

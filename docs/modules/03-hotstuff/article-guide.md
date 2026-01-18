@@ -238,7 +238,7 @@ Now that you've read the article with guided notes, deepen your understanding:
 
 ## 📚 Additional Context
 
-**Historical Note**: HotStuff was introduced in 2019 by Yin, Malkhi, Reiter, Gueta, and Abraham. It became the foundation for several production blockchain systems:
+**Historical Note**: HotStuff was introduced in 2018 by Yin, Malkhi, Reiter, Gueta, and Abraham (published at PODC 2018). It became the foundation for several production blockchain systems:
 - **LibraBFT** (now Diem): Used HotStuff as its core consensus
 - **CasperFFG** (Ethereum 2.0): Inspired by HotStuff's threshold signature approach
 - **Tendermint**: Shares similar properties (though developed independently)

@@ -21,7 +21,7 @@
 
 | Aspect | PBFT | HotStuff |
 |--------|------|----------|
-| **Year** | 1999 | 2019 |
+| **Year** | 1999 | 2018 |
 | **Phases** | 3 (Pre-Prepare, Prepare, Commit) | 2 main (Prepare, Pre-Commit) |
 | **Communication** | All-to-all broadcasting | Leader-based with vote aggregation |
 | **Complexity** | O(n²) | O(n) |
