@@ -280,7 +280,7 @@ We'd love to hear from you:
 
 ## Ready to Begin?
 
-🚀 **Start your journey**: [Module 01 - Foundation](../modules/01-foundation/README.md)
+🚀 **Start your journey**: [Module 01 - Foundation](modules/01-foundation/README.md)
 
 ---
 
@@ -310,7 +310,7 @@ We minimize heavy mathematics, but some is necessary:
 - Skip proofs on first pass, return later if interested
 
 ### Can I use this for teaching?
-Yes! Content is licensed under [CC BY-SA 4.0](../LICENSE.md). You can:
+Yes! Content is licensed under [CC BY-SA 4.0](LICENSE.md). You can:
 - Use in courses or workshops
 - Remix and adapt content
 - Share with proper attribution

@@ -92,10 +92,14 @@ Complete the [Checkpoint](checkpoint.md) to verify your understanding before mov
 
 ## 🚀 Next Steps
 
-After mastering HotStuff 2.0, continue to:
+🎉 **Congratulations!** You've completed the core BFT learning path (Modules 01-03).
 
-- **Module 04**: [Practical Application](../04-practical/README.md) - Analyze real-world BFT implementations (Tendermint, LibraBFT)
-- **Module 05**: [Advanced Topics](../05-advanced/README.md) - Explore BFT variants, optimizations, and research directions (optional)
+You now understand:
+- Byzantine fault tolerance fundamentals
+- Classical BFT via PBFT
+- Modern BFT via HotStuff 2.0
+
+**Additional modules** (Practical Application and Advanced Topics) are planned for future releases.
 
 ---
 

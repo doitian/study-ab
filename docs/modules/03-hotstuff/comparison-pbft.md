@@ -441,7 +441,6 @@ Message sizes: Small (single QC)
 
 - **[Responsiveness](responsiveness.md)**: Deep dive into HotStuff's responsiveness property
 - **[Checkpoint](checkpoint.md)**: Test your understanding of PBFT vs HotStuff
-- **[Module 04](../04-practical/README.md)**: See real-world BFT implementations
 
 ---
 

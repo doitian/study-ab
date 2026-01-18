@@ -14,6 +14,10 @@ edit_uri: edit/main/docs/
 # Copyright
 copyright: Copyright &copy; 2026 Study-AB Contributors. Licensed under CC BY-SA 4.0
 
+# Exclude template files from build
+exclude_docs: |
+  _templates/
+  
 # Theme configuration
 theme:
   name: material
@@ -156,20 +160,6 @@ nav:
           - Comparison with PBFT: modules/03-hotstuff/comparison-pbft.md
           - Responsiveness: modules/03-hotstuff/responsiveness.md
           - Checkpoint: modules/03-hotstuff/checkpoint.md
-      
-      - "04 - Practical":
-          - Overview: modules/04-practical/README.md
-          - Exercises: modules/04-practical/exercises.md
-          - Real-World Systems: modules/04-practical/real-world-systems.md
-          - Protocol Analysis: modules/04-practical/protocol-analysis.md
-          - Checkpoint: modules/04-practical/checkpoint.md
-      
-      - "05 - Advanced":
-          - Overview: modules/05-advanced/README.md
-          - BFT Variants: modules/05-advanced/variants.md
-          - Optimizations: modules/05-advanced/optimizations.md
-          - Research Directions: modules/05-advanced/research-directions.md
-          - Checkpoint: modules/05-advanced/checkpoint.md
   
   - Resources:
       - Glossary: resources/glossary.md

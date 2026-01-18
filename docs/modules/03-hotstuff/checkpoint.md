@@ -293,8 +293,7 @@ If you passed this checkpoint, you can now:
 
 ## 🔗 Next Steps
 
-**Passed the checkpoint?** Continue to:
-- **[Module 04: Practical Application](../04-practical/README.md)** - Analyze real-world BFT implementations like Tendermint and LibraBFT
+**Passed the checkpoint?** 🎉 Congratulations! You've completed the core BFT learning path (Modules 01-03).
 
 **Need more practice?** Review:
 - **[Article Guide](article-guide.md)** - Revisit key concepts with guided notes

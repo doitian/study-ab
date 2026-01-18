@@ -63,31 +63,8 @@ Understand modern BFT through HotStuff:
 
 ---
 
-### 🟡 **Module 04: Practical Application** *(Priority: P3 - Supplementary)*
-**Estimated Time:** 2-3 hours  
-**Prerequisites:** Modules 01, 02, 03
-
-Apply BFT knowledge to real-world systems:
-- Tendermint consensus in the Cosmos ecosystem
-- Diem BFT (LibraBFT) - HotStuff in production
-- Hyperledger Fabric's BFT ordering
-- Protocol analysis framework and comparison exercises
-
-[**Start Module 04 →**](modules/04-practical/README.md)
-
----
-
-### 🟣 **Module 05: Advanced Topics** *(Priority: P4 - Optional)*
-**Estimated Time:** 2 hours  
-**Prerequisites:** Modules 01, 02, 03
-
-Explore advanced BFT concepts:
-- BFT variants (PoS BFT, optimistic BFT, chained consensus)
-- Performance optimizations (pipelining, sharding)
-- Current research directions and open problems
-- Reading guide for academic BFT papers
-
-[**Start Module 05 →**](modules/05-advanced/README.md)
+!!! info "Additional Modules Coming Soon"
+    **Module 04: Practical Application** and **Module 05: Advanced Topics** are planned for future releases. The current MVP covers the core learning path (Modules 01-03).
 
 ---
 
@@ -143,15 +120,15 @@ Each module includes 3-5 questions to verify your understanding before moving fo
 
 ### **For Beginners** (No BFT Experience)
 ```
-01 Foundation → 02 PBFT → 03 HotStuff → 04 Practical → (optional) 05 Advanced
+01 Foundation → 02 PBFT → 03 HotStuff
 ```
-**Total Time:** 12-15 hours
+**Total Time:** 8-10 hours
 
 ### **For Those with BFT Background**
 ```
-Skim 01 → 02 PBFT → 03 HotStuff → 04 Practical
+Skim 01 → 02 PBFT → 03 HotStuff
 ```
-**Total Time:** 8-10 hours
+**Total Time:** 6-8 hours
 
 ### **For HotStuff-Focused Learners**
 ```
@@ -173,13 +150,13 @@ Skim 01 → 02 PBFT → 03 HotStuff → 04 Practical
 
 - **Questions?** Open a [GitHub Discussion](https://github.com/study-ab/study-ab/discussions)
 - **Found an error?** Submit an [issue](https://github.com/study-ab/study-ab/issues)
-- **Want to contribute?** See [CONTRIBUTING.md](../CONTRIBUTING.md)
+- **Want to contribute?** See [CONTRIBUTING.md](CONTRIBUTING.md)
 
 ---
 
 ## 📜 License
 
-This learning path is licensed under [CC BY-SA 4.0](../LICENSE.md) – you're free to use, remix, and share with attribution.
+This learning path is licensed under [CC BY-SA 4.0](LICENSE.md) – you're free to use, remix, and share with attribution.
 
 ---
 

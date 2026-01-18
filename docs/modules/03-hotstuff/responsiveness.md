@@ -370,7 +370,6 @@ def on_timer_expired():
 ## 🔗 Next Steps
 
 - **[Checkpoint](checkpoint.md)**: Test your understanding of HotStuff's key concepts
-- **[Module 04](../04-practical/README.md)**: See responsiveness in real-world BFT systems
 
 ---
 

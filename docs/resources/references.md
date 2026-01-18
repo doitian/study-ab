@@ -13,7 +13,6 @@ Curated resources for Byzantine Fault Tolerance learning, organized by topic.
 
 - **Primary URL**: [https://lamport.azurewebsites.net/pubs/byz.pdf](https://lamport.azurewebsites.net/pubs/byz.pdf)
 - **Fallback**: [https://web.archive.org/web/*/lamport.azurewebsites.net/pubs/byz.pdf](https://web.archive.org/web/*/lamport.azurewebsites.net/pubs/byz.pdf)
-- **Local Cache**: [cached-articles/byzantine-generals-1982.pdf](../resources/papers/byzantine-generals-1982.pdf)
 - **Summary**: The original formulation of the Byzantine agreement problem as a thought experiment with generals coordinating an attack. Proves impossibility results and presents algorithms for oral and written message scenarios.
 
 ---
@@ -25,7 +24,6 @@ Curated resources for Byzantine Fault Tolerance learning, organized by topic.
 
 - **Primary URL**: [http://pmg.csail.mit.edu/papers/osdi99.pdf](http://pmg.csail.mit.edu/papers/osdi99.pdf)
 - **Fallback**: [https://web.archive.org/web/*/pmg.csail.mit.edu/papers/osdi99.pdf](https://web.archive.org/web/*/pmg.csail.mit.edu/papers/osdi99.pdf)
-- **Local Cache**: [cached-articles/pbft-osdi99.pdf](../resources/papers/pbft-osdi99.pdf)
 - **Summary**: The first practical BFT algorithm achieving performance suitable for real systems. Introduces the three-phase protocol (pre-prepare, prepare, commit) and view changes for fault recovery. Demonstrates O(n²) communication complexity.
 
 ---
@@ -46,7 +44,6 @@ Curated resources for Byzantine Fault Tolerance learning, organized by topic.
 - **Primary URL**: [https://arxiv.org/abs/1803.05069](https://arxiv.org/abs/1803.05069)
 - **PDF**: [https://arxiv.org/pdf/1803.05069.pdf](https://arxiv.org/pdf/1803.05069.pdf)
 - **Fallback**: [https://dl.acm.org/doi/10.1145/3293611.3331591](https://dl.acm.org/doi/10.1145/3293611.3331591)
-- **Local Cache**: [cached-articles/hotstuff-podc2019.pdf](../resources/papers/hotstuff-podc2019.pdf)
 - **Summary**: Introduces HotStuff, achieving O(n) communication complexity through threshold signatures and responsiveness property. Foundation for modern BFT algorithms used in blockchains (Diem, Cosmos).
 
 ---
