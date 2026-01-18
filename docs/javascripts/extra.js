@@ -85,8 +85,23 @@ document.addEventListener('DOMContentLoaded', function() {
     button.setAttribute('aria-label', 'Copy code to clipboard');
 
     button.addEventListener('click', function() {
+      if (!navigator.clipboard) {
+        // Fallback for non-HTTPS or unsupported browsers
+        button.textContent = 'Copy not supported';
+        setTimeout(function() {
+          button.textContent = 'Copy';
+        }, 2000);
+        return;
+      }
+
       navigator.clipboard.writeText(codeBlock.textContent).then(function() {
         button.textContent = 'Copied!';
+        setTimeout(function() {
+          button.textContent = 'Copy';
+        }, 2000);
+      }).catch(function(err) {
+        console.error('Failed to copy:', err);
+        button.textContent = 'Copy failed';
         setTimeout(function() {
           button.textContent = 'Copy';
         }, 2000);

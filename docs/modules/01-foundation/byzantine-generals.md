@@ -161,6 +161,13 @@ Later modules will explore **how** algorithms like PBFT and HotStuff achieve Byz
        - If at least **2 out of 3** messages say "ATTACK", decide ATTACK
        - If at least **2 out of 3** messages say "RETREAT", decide RETREAT
     
+    **Why this works**: Since the commander is **loyal** in this example, all honest lieutenants receive the same "ATTACK" message from the commander. Even if L2 is Byzantine and sends conflicting messages, each honest lieutenant (L1 and L3) will see:
+    - Commander: ATTACK (honest)
+    - Other honest lieutenant: ATTACK (relaying commander's message)
+    - Byzantine lieutenant: possibly RETREAT (lying)
+    
+    Majority voting (2 ATTACK vs 1 RETREAT) ensures agreement on ATTACK.
+    
     **Why this works**:
     - The commander is loyal, so all lieutenants receive "ATTACK" from the commander
     - Even if 1 traitor lieutenant lies, each loyal lieutenant sees:
