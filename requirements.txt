@@ -1,0 +1,12 @@
+# BFT Algorithm Learning Path - MkDocs Dependencies
+# Generated: 2026-01-18
+
+# Core documentation framework
+mkdocs>=1.5.3
+mkdocs-material>=9.5.0
+
+# Markdown extensions
+pymdown-extensions>=10.7
+
+# Diagram and visualization support
+# Note: Mermaid.js, D3.js, KaTeX loaded via CDN in mkdocs.yml for bundle optimization

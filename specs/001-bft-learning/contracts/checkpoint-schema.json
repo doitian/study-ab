@@ -1,0 +1,143 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://study-ab.dev/schemas/checkpoint.json",
+  "title": "Checkpoint",
+  "description": "Self-assessment point for learners to verify understanding",
+  "type": "object",
+  "required": [
+    "id",
+    "moduleId",
+    "title",
+    "questions",
+    "passingCriteria"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^checkpoint-[0-9]{2}-[a-z-]+$",
+      "description": "Unique identifier (e.g., 'checkpoint-01-foundation')"
+    },
+    "moduleId": {
+      "type": "string",
+      "pattern": "^module-[0-9]{2}-[a-z-]+$",
+      "description": "Reference to parent module"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 5,
+      "maxLength": 150,
+      "description": "Checkpoint title"
+    },
+    "questions": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 10,
+      "items": {
+        "$ref": "#/definitions/checkpointQuestion"
+      },
+      "description": "Array of assessment questions"
+    },
+    "passingCriteria": {
+      "type": "string",
+      "description": "Success criteria (e.g., '3 out of 4 correct')"
+    },
+    "feedback": {
+      "type": "object",
+      "description": "Guidance based on performance",
+      "properties": {
+        "allCorrect": {
+          "type": "string",
+          "description": "Message when learner gets all questions right"
+        },
+        "mostCorrect": {
+          "type": "string",
+          "description": "Message when learner passes but not perfect"
+        },
+        "needsReview": {
+          "type": "string",
+          "description": "Message when learner should review material"
+        }
+      }
+    }
+  },
+  "definitions": {
+    "checkpointQuestion": {
+      "type": "object",
+      "required": ["id", "question", "type", "correctAnswer", "explanation"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^q[0-9]+$",
+          "description": "Question identifier (e.g., 'q1', 'q2')"
+        },
+        "question": {
+          "type": "string",
+          "minLength": 10,
+          "description": "The actual question text"
+        },
+        "type": {
+          "type": "string",
+          "enum": ["multiple-choice", "true-false", "fill-in-blank", "short-answer"],
+          "description": "Question type"
+        },
+        "options": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Answer options (for multiple-choice)"
+        },
+        "correctAnswer": {
+          "type": ["string", "array"],
+          "description": "Correct answer (string for single, array for multiple)"
+        },
+        "explanation": {
+          "type": "string",
+          "minLength": 20,
+          "description": "Explanation of the correct answer"
+        },
+        "relatedConcepts": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Concepts tested by this question"
+        },
+        "difficulty": {
+          "type": "string",
+          "enum": ["easy", "medium", "hard"],
+          "description": "Question difficulty level"
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": { "type": { "const": "multiple-choice" } }
+          },
+          "then": {
+            "required": ["options"],
+            "properties": {
+              "options": {
+                "minItems": 2,
+                "maxItems": 6
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": { "type": { "const": "true-false" } }
+          },
+          "then": {
+            "properties": {
+              "correctAnswer": {
+                "enum": ["true", "false", "True", "False"]
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "additionalProperties": false
+}

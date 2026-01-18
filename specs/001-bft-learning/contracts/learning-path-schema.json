@@ -1,0 +1,106 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://study-ab.dev/schemas/learning-path.json",
+  "title": "LearningPath",
+  "description": "Complete BFT Algorithm Learning Path structure",
+  "type": "object",
+  "required": [
+    "id",
+    "title",
+    "description",
+    "version",
+    "estimatedHours",
+    "prerequisites",
+    "modules"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$",
+      "description": "Unique learning path identifier",
+      "examples": ["bft-algorithm-learning-path"]
+    },
+    "title": {
+      "type": "string",
+      "minLength": 5,
+      "maxLength": 150,
+      "description": "Human-readable learning path title"
+    },
+    "description": {
+      "type": "string",
+      "minLength": 50,
+      "maxLength": 1000,
+      "description": "Overview of the learning path"
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$",
+      "description": "Semantic version (e.g., '1.0.0')"
+    },
+    "estimatedHours": {
+      "type": "number",
+      "minimum": 1,
+      "maximum": 50,
+      "description": "Total estimated time to complete (hours)"
+    },
+    "prerequisites": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 5
+      },
+      "description": "Required background knowledge before starting"
+    },
+    "modules": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 10,
+      "items": {
+        "type": "string",
+        "pattern": "^module-[0-9]{2}-[a-z-]+$"
+      },
+      "description": "Ordered list of module IDs"
+    },
+    "glossary": {
+      "type": "string",
+      "description": "Reference to glossary resource"
+    },
+    "resourceLibrary": {
+      "type": "string",
+      "description": "Reference to resource library"
+    },
+    "lastUpdated": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Last modification timestamp"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "authors": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "maintainers": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "license": {
+          "type": "string",
+          "description": "Content license (e.g., 'CC BY-SA 4.0')"
+        },
+        "repository": {
+          "type": "string",
+          "format": "uri",
+          "description": "GitHub repository URL"
+        }
+      }
+    }
+  },
+  "additionalProperties": false
+}

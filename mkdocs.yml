@@ -1,0 +1,181 @@
+# BFT Algorithm Learning Path - MkDocs Configuration
+# Generated: 2026-01-18
+
+site_name: BFT Algorithm Learning Path
+site_description: A progressive learning journey through Byzantine Fault Tolerance algorithms, from foundational concepts to HotStuff 2.0
+site_author: Study-AB Contributors
+site_url: https://study-ab.dev
+
+# Repository
+repo_name: study-ab/study-ab
+repo_url: https://github.com/study-ab/study-ab
+edit_uri: edit/main/docs/
+
+# Copyright
+copyright: Copyright &copy; 2026 Study-AB Contributors. Licensed under CC BY-SA 4.0
+
+# Exclude template files from build
+exclude_docs: |
+  _templates/
+  
+# Theme configuration
+theme:
+  name: material
+  palette:
+    # Light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: deep purple
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: deep purple
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  
+  features:
+    - navigation.instant        # Fast page loads
+    - navigation.tracking       # URL tracking
+    - navigation.tabs           # Top-level tabs
+    - navigation.sections       # Collapsible sections
+    - navigation.expand         # Expand all sections
+    - navigation.path           # Breadcrumbs
+    - navigation.top            # Back to top button
+    - navigation.footer         # Previous/next navigation
+    - search.suggest            # Search suggestions
+    - search.highlight          # Highlight search terms
+    - search.share              # Share search results
+    - content.code.copy         # Copy code blocks
+    - content.tabs.link         # Link content tabs
+    
+  font:
+    text: Roboto
+    code: Roboto Mono
+  
+  icon:
+    repo: fontawesome/brands/github
+
+# Plugins
+plugins:
+  - search:
+      lang: en
+      separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
+
+# Extensions
+markdown_extensions:
+  # Python Markdown
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+      toc_depth: 3
+  
+  # PyMdown Extensions
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+# Extra JavaScript (CDN for bundle optimization)
+extra_javascript:
+  # Mermaid.js for protocol diagrams
+  - https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js
+  # KaTeX for mathematical notation
+  - https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js
+  - https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js
+  # D3.js for interactive visualizations (loaded lazily on pages that need it)
+  - https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js
+  # Custom JavaScript for interactive elements
+  - javascripts/extra.js
+
+# Extra CSS
+extra_css:
+  # KaTeX styling
+  - https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css
+  # Custom styling (print-friendly, high-contrast)
+  - stylesheets/custom.css
+
+# Navigation structure (5 modules)
+nav:
+  - Home: index.md
+  - Getting Started: 
+      - Prerequisites: resources/prerequisites.md
+      - How to Use This Path: GETTING-STARTED.md
+  
+  - Modules:
+      - "01 - Foundation":
+          - Overview: modules/01-foundation/README.md
+          - Byzantine Generals Problem: modules/01-foundation/byzantine-generals.md
+          - Fault Models: modules/01-foundation/fault-models.md
+          - Safety & Liveness: modules/01-foundation/safety-liveness.md
+          - Thresholds (2f+1, 3f+1): modules/01-foundation/thresholds.md
+          - Checkpoint: modules/01-foundation/checkpoint.md
+      
+      - "02 - PBFT":
+          - Overview: modules/02-pbft/README.md
+          - Introduction to PBFT: modules/02-pbft/overview.md
+          - Three-Phase Protocol: modules/02-pbft/three-phase-protocol.md
+          - View Changes: modules/02-pbft/view-change.md
+          - Complexity Analysis: modules/02-pbft/complexity-analysis.md
+          - Checkpoint: modules/02-pbft/checkpoint.md
+      
+      - "03 - HotStuff":
+          - Overview: modules/03-hotstuff/README.md
+          - Article Reading Guide: modules/03-hotstuff/article-guide.md
+          - Two-Phase Protocol: modules/03-hotstuff/two-phase-protocol.md
+          - Comparison with PBFT: modules/03-hotstuff/comparison-pbft.md
+          - Responsiveness: modules/03-hotstuff/responsiveness.md
+          - Checkpoint: modules/03-hotstuff/checkpoint.md
+  
+  - Resources:
+      - Glossary: resources/glossary.md
+      - References: resources/references.md
+      - Prerequisites: resources/prerequisites.md
+
+# Extra configuration
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/study-ab/study-ab
+  
+  version:
+    provider: mike
+    default: latest
+
+# Accessibility and progressive enhancement
+# Content must be readable without JavaScript
+# Diagrams and interactive elements are enhancements

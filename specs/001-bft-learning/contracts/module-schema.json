@@ -1,0 +1,145 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://study-ab.dev/schemas/module.json",
+  "title": "Module",
+  "description": "A self-contained learning unit in the BFT Algorithm Learning Path",
+  "type": "object",
+  "required": [
+    "id",
+    "number",
+    "title",
+    "priority",
+    "description",
+    "learningObjectives",
+    "prerequisites",
+    "estimatedHours",
+    "status"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^module-[0-9]{2}-[a-z-]+$",
+      "description": "Unique identifier (e.g., 'module-01-foundation')",
+      "examples": ["module-01-foundation", "module-03-hotstuff"]
+    },
+    "number": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 5,
+      "description": "Module sequence number (1-5)"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 5,
+      "maxLength": 100,
+      "description": "Human-readable module title"
+    },
+    "priority": {
+      "type": "string",
+      "enum": ["P1", "P2", "P3", "P4"],
+      "description": "Priority level from feature specification"
+    },
+    "description": {
+      "type": "string",
+      "minLength": 20,
+      "maxLength": 500,
+      "description": "Module overview and context"
+    },
+    "learningObjectives": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 6,
+      "items": {
+        "type": "string",
+        "pattern": "^(Explain|Understand|Trace|Compare|Identify|Analyze|Apply|Evaluate|Create).*",
+        "description": "Specific, measurable learning outcome (must start with action verb)"
+      },
+      "description": "What learners will be able to do after completing this module"
+    },
+    "prerequisites": {
+      "type": "array",
+      "items": {
+        "oneOf": [
+          {
+            "type": "string",
+            "pattern": "^module-[0-9]{2}-[a-z-]+$",
+            "description": "Reference to another module ID"
+          },
+          {
+            "type": "string",
+            "description": "General prerequisite knowledge statement"
+          }
+        ]
+      },
+      "description": "Required prior knowledge or completed modules"
+    },
+    "estimatedHours": {
+      "type": "number",
+      "minimum": 0.5,
+      "maximum": 8.0,
+      "description": "Estimated time to complete (hours)"
+    },
+    "concepts": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9-]+$"
+      },
+      "description": "Array of Concept IDs covered in this module"
+    },
+    "exercises": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^exercise-[a-z0-9-]+$"
+      },
+      "description": "Array of Exercise IDs for this module"
+    },
+    "resources": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^resource-[a-z0-9-]+$"
+      },
+      "description": "Array of Resource IDs for this module"
+    },
+    "checkpoint": {
+      "type": "string",
+      "pattern": "^checkpoint-[0-9]{2}-[a-z-]+$",
+      "description": "Checkpoint ID for self-assessment"
+    },
+    "nextModule": {
+      "type": ["string", "null"],
+      "pattern": "^module-[0-9]{2}-[a-z-]+$",
+      "description": "ID of the next module in sequence (null for last module)"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["draft", "review", "published"],
+      "description": "Current module lifecycle state"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "author": {
+          "type": "string"
+        },
+        "lastUpdated": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "reviewers": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "version": {
+          "type": "string",
+          "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+        }
+      }
+    }
+  },
+  "additionalProperties": false
+}
