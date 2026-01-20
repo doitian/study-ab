@@ -332,4 +332,4 @@ O(n²) curve: Messages ≈ 2n²
 
 - **Castro, M., & Liskov, B.** (1999). "Practical Byzantine Fault Tolerance." *OSDI '99*, Section 6 (Performance Evaluation).
 - **Yin, M., et al.** (2019). "HotStuff: BFT Consensus in the Lens of Blockchain." (For comparison with O(n) complexity)
-- See [References](../../resources/references.md) for full papers.
+- See [References](../../../../resources/references.md) for full papers.

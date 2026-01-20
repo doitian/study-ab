@@ -8,4 +8,4 @@
 **Authors**: Ittai Abraham, Dahlia Malkhi  
 **Date**: April 1, 2023
 
-This article is the **primary learning resource for Module 03**. See [Article Guide](../../modules/03-hotstuff/article-guide.md) for guided reading notes.
+This article is the **primary learning resource for Module 03**. See [Article Guide](../../courses/bft-algorithms/modules/03-hotstuff/article-guide.md) for guided reading notes.

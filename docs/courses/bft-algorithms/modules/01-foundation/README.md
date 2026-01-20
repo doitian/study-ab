@@ -26,7 +26,7 @@ Before starting this module, ensure you:
 - [ ] Are familiar with the concept of reaching agreement among multiple parties
 - [ ] Have basic mathematical reasoning skills (simple algebra)
 
-**Missing prerequisites?** Consult the [Prerequisites Guide](../../resources/prerequisites.md).
+**Missing prerequisites?** Consult the [Prerequisites Guide](../../../../resources/prerequisites.md).
 
 ---
 
@@ -69,15 +69,15 @@ Complete the [Checkpoint](checkpoint.md) to verify your understanding before mov
 
 ## 🔑 Key Concepts Introduced
 
-- [Byzantine Fault](../../resources/glossary.md#byzantine-fault)
-- [Byzantine Generals Problem](../../resources/glossary.md#byzantine-generals-problem)
-- [Crash Fault](../../resources/glossary.md#crash-fault)
-- [Omission Fault](../../resources/glossary.md#omission-fault)
-- [Safety](../../resources/glossary.md#safety)
-- [Liveness](../../resources/glossary.md#liveness)
-- [Quorum](../../resources/glossary.md#quorum)
-- [2f+1 Threshold](../../resources/glossary.md#2f1-threshold)
-- [3f+1 Replicas](../../resources/glossary.md#3f1-replicas)
+- [Byzantine Fault](../../../../resources/glossary.md#byzantine-fault)
+- [Byzantine Generals Problem](../../../../resources/glossary.md#byzantine-generals-problem)
+- [Crash Fault](../../../../resources/glossary.md#crash-fault)
+- [Omission Fault](../../../../resources/glossary.md#omission-fault)
+- [Safety](../../../../resources/glossary.md#safety)
+- [Liveness](../../../../resources/glossary.md#liveness)
+- [Quorum](../../../../resources/glossary.md#quorum)
+- [2f+1 Threshold](../../../../resources/glossary.md#2f1-threshold)
+- [3f+1 Replicas](../../../../resources/glossary.md#3f1-replicas)
 
 ---
 
@@ -85,7 +85,7 @@ Complete the [Checkpoint](checkpoint.md) to verify your understanding before mov
 
 **Next Module**: [Module 02 - PBFT (Classical BFT)](../02-pbft/README.md)
 
-**Resources**: [Glossary](../../resources/glossary.md) | [References](../../resources/references.md)
+**Resources**: [Glossary](../../../../resources/glossary.md) | [References](../../../../resources/references.md)
 
 ---
 

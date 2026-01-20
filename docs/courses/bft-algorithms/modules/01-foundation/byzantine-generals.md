@@ -195,7 +195,7 @@ Later modules will explore **how** algorithms like PBFT and HotStuff achieve Byz
 
 - [Fault Models](fault-models.md) - Detailed comparison of crash vs. Byzantine faults
 - [Threshold Requirements](thresholds.md) - Mathematical derivation of 3f+1 and 2f+1
-- [Quorum](../../resources/glossary.md#quorum) - Formal definition in glossary
+- [Quorum](../../../../resources/glossary.md#quorum) - Formal definition in glossary
 
 ---
 
@@ -209,4 +209,4 @@ Later modules will explore **how** algorithms like PBFT and HotStuff achieve Byz
 ## References
 
 - **Lamport, L., Shostak, R., & Pease, M.** (1982). "The Byzantine Generals Problem." *ACM Transactions on Programming Languages and Systems*, 4(3), 382-401.
-- See [References](../../resources/references.md) for the full paper and additional resources.
+- See [References](../../../../resources/references.md) for the full paper and additional resources.

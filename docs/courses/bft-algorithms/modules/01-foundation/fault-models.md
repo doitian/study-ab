@@ -257,7 +257,7 @@ Byzantine faults are **extremely difficult to detect**:
 
 - [Byzantine Generals Problem](byzantine-generals.md) - Why Byzantine faults are hard
 - [Threshold Requirements](thresholds.md) - Why 3f+1 replicas for BFT
-- [Fault Model](../../resources/glossary.md#fault-model) - Formal definition in glossary
+- [Fault Model](../../../../resources/glossary.md#fault-model) - Formal definition in glossary
 
 ---
 

@@ -40,7 +40,7 @@ As you read the article, pay special attention to:
 
 ### Section 2: The Core Innovation - Threshold Signatures
 
-**Key Concept**: [Threshold Signature](../../resources/glossary.md#threshold-signature)
+**Key Concept**: [Threshold Signature](../../../../resources/glossary.md#threshold-signature)
 
 **How It Works**:
 1. Each replica signs its vote with a **partial signature**
@@ -65,7 +65,7 @@ As you read the article, pay special attention to:
 
 ### Section 3: HotStuff's Two-Phase Protocol
 
-**Key Concept**: [Prepare Phase](../../resources/glossary.md#prepare-phase-hotstuff) and [Pre-Commit Phase](../../resources/glossary.md#pre-commit-phase)
+**Key Concept**: [Prepare Phase](../../../../resources/glossary.md#prepare-phase-hotstuff) and [Pre-Commit Phase](../../../../resources/glossary.md#pre-commit-phase)
 
 **Phase 1: Prepare**
 1. Leader proposes a value
@@ -98,7 +98,7 @@ As you read the article, pay special attention to:
 
 ### Section 4: Responsiveness - Progress Without Timeouts
 
-**Key Concept**: [Responsiveness](../../resources/glossary.md#responsiveness)
+**Key Concept**: [Responsiveness](../../../../resources/glossary.md#responsiveness)
 
 **What It Means**:
 - **Non-responsive protocols** (like PBFT): Use fixed timeouts to detect leader failures. If the timeout is too short, healthy leaders are replaced unnecessarily. If too long, the system stalls.
@@ -123,7 +123,7 @@ Replicas don't wait for a fixed timeout to suspect the leader. Instead:
 
 ### Section 5: Chained HotStuff - Pipelining for Throughput
 
-**Key Concept**: [Chained HotStuff](../../resources/glossary.md#chained-hotstuff)
+**Key Concept**: [Chained HotStuff](../../../../resources/glossary.md#chained-hotstuff)
 
 **The Idea**: Instead of completing all phases for one proposal before starting the next, **overlap phases of different proposals**.
 
@@ -244,9 +244,9 @@ Now that you've read the article with guided notes, deepen your understanding:
 - **Tendermint**: Shares similar properties (though developed independently)
 
 **Further Reading**:
-- Original HotStuff paper: [HotStuff: BFT Consensus in the Lens of Blockchain](../../resources/references.md#hotstuff-paper)
+- Original HotStuff paper: [HotStuff: BFT Consensus in the Lens of Blockchain](../../../../resources/references.md#hotstuff-paper)
 - Threshold signature schemes: BLS signatures, threshold ECDSA
-- Chained HotStuff analysis: [Resources](../../resources/references.md)
+- Chained HotStuff analysis: [Resources](../../../../resources/references.md)
 
 ---
 

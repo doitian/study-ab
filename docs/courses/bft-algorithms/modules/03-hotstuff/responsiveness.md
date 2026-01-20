@@ -375,6 +375,6 @@ def on_timer_expired():
 
 ## 📚 Further Reading
 
-- HotStuff paper: [Section on Responsiveness](../../resources/references.md#hotstuff-paper)
+- HotStuff paper: [Section on Responsiveness](../../../../resources/references.md#hotstuff-paper)
 - Decentralized Thoughts: [Responsiveness in BFT](https://decentralizedthoughts.github.io/2021-10-29-responsive-bft/)
-- Tendermint: [Alternative approach to responsiveness](../../resources/references.md#tendermint)
+- Tendermint: [Alternative approach to responsiveness](../../../../resources/references.md#tendermint)

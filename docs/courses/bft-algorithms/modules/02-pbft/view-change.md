@@ -304,4 +304,4 @@ HotStuff improves on PBFT's view change complexity through **chained consensus**
 ## References
 
 - **Castro, M., & Liskov, B.** (1999). "Practical Byzantine Fault Tolerance." *OSDI '99*, Section 4.3 (View Changes).
-- See [References](../../resources/references.md) for the full PBFT paper.
+- See [References](../../../../resources/references.md) for the full PBFT paper.

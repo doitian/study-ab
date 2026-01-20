@@ -82,7 +82,7 @@ Skim 01 → 02 PBFT → 03 HotStuff → 04 Practical
 
 ### 1. Start with Module 01
 
-Navigate to `docs/modules/01-foundation/README.md` and begin reading.
+Navigate to `docs/courses/bft-algorithms/modules/01-foundation/README.md` and begin reading.
 
 ### 2. Follow the Module Structure
 
@@ -280,7 +280,7 @@ We'd love to hear from you:
 
 ## Ready to Begin?
 
-🚀 **Start your journey**: [Module 01 - Foundation](../modules/01-foundation/README.md)
+🚀 **Start your journey**: [Module 01 - Foundation](../courses/bft-algorithms/modules/01-foundation/README.md)
 
 ---
 

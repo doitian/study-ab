@@ -351,4 +351,4 @@ Client                Primary (R0)         Replica 1           Replica 2        
 ## References
 
 - **Castro, M., & Liskov, B.** (1999). "Practical Byzantine Fault Tolerance." *OSDI '99*, Section 4 (The Algorithm).
-- See [References](../../resources/references.md) for the full PBFT paper.
+- See [References](../../../../resources/references.md) for the full PBFT paper.
