@@ -1,8 +1,8 @@
 # BFT Algorithm Learning Path - MkDocs Configuration
 # Generated: 2026-01-18
 
-site_name: BFT Algorithm Learning Path
-site_description: A progressive learning journey through Byzantine Fault Tolerance algorithms, from foundational concepts to HotStuff 2.0
+site_name: Study-AB
+site_description: Advanced learning paths for distributed systems, consensus algorithms, and blockchain technologies
 site_author: Study-AB Contributors
 site_url: https://study-ab.dev
 
@@ -129,37 +129,40 @@ extra_css:
   # Custom styling (print-friendly, high-contrast)
   - stylesheets/custom.css
 
-# Navigation structure (5 modules)
+# Navigation structure
 nav:
   - Home: index.md
-  - Getting Started: 
-      - Prerequisites: resources/prerequisites.md
-      - How to Use This Path: GETTING-STARTED.md
-  
-  - Modules:
-      - "01 - Foundation":
-          - Overview: modules/01-foundation/README.md
-          - Byzantine Generals Problem: modules/01-foundation/byzantine-generals.md
-          - Fault Models: modules/01-foundation/fault-models.md
-          - Safety & Liveness: modules/01-foundation/safety-liveness.md
-          - Thresholds (2f+1, 3f+1): modules/01-foundation/thresholds.md
-          - Checkpoint: modules/01-foundation/checkpoint.md
-      
-      - "02 - PBFT":
-          - Overview: modules/02-pbft/README.md
-          - Introduction to PBFT: modules/02-pbft/overview.md
-          - Three-Phase Protocol: modules/02-pbft/three-phase-protocol.md
-          - View Changes: modules/02-pbft/view-change.md
-          - Complexity Analysis: modules/02-pbft/complexity-analysis.md
-          - Checkpoint: modules/02-pbft/checkpoint.md
-      
-      - "03 - HotStuff":
-          - Overview: modules/03-hotstuff/README.md
-          - Article Reading Guide: modules/03-hotstuff/article-guide.md
-          - Two-Phase Protocol: modules/03-hotstuff/two-phase-protocol.md
-          - Comparison with PBFT: modules/03-hotstuff/comparison-pbft.md
-          - Responsiveness: modules/03-hotstuff/responsiveness.md
-          - Checkpoint: modules/03-hotstuff/checkpoint.md
+  - Courses:
+      - All Courses: courses/index.md
+      - BFT Algorithm Learning Path:
+          - Course Home: courses/bft-algorithms/index.md
+          - Getting Started: 
+              - Prerequisites: resources/prerequisites.md
+              - How to Use This Path: GETTING-STARTED.md
+          - Modules:
+              - "01 - Foundation":
+                  - Overview: courses/bft-algorithms/modules/01-foundation/README.md
+                  - Byzantine Generals Problem: courses/bft-algorithms/modules/01-foundation/byzantine-generals.md
+                  - Fault Models: courses/bft-algorithms/modules/01-foundation/fault-models.md
+                  - Safety & Liveness: courses/bft-algorithms/modules/01-foundation/safety-liveness.md
+                  - Thresholds (2f+1, 3f+1): courses/bft-algorithms/modules/01-foundation/thresholds.md
+                  - Checkpoint: courses/bft-algorithms/modules/01-foundation/checkpoint.md
+              
+              - "02 - PBFT":
+                  - Overview: courses/bft-algorithms/modules/02-pbft/README.md
+                  - Introduction to PBFT: courses/bft-algorithms/modules/02-pbft/overview.md
+                  - Three-Phase Protocol: courses/bft-algorithms/modules/02-pbft/three-phase-protocol.md
+                  - View Changes: courses/bft-algorithms/modules/02-pbft/view-change.md
+                  - Complexity Analysis: courses/bft-algorithms/modules/02-pbft/complexity-analysis.md
+                  - Checkpoint: courses/bft-algorithms/modules/02-pbft/checkpoint.md
+              
+              - "03 - HotStuff":
+                  - Overview: courses/bft-algorithms/modules/03-hotstuff/README.md
+                  - Article Reading Guide: courses/bft-algorithms/modules/03-hotstuff/article-guide.md
+                  - Two-Phase Protocol: courses/bft-algorithms/modules/03-hotstuff/two-phase-protocol.md
+                  - Comparison with PBFT: courses/bft-algorithms/modules/03-hotstuff/comparison-pbft.md
+                  - Responsiveness: courses/bft-algorithms/modules/03-hotstuff/responsiveness.md
+                  - Checkpoint: courses/bft-algorithms/modules/03-hotstuff/checkpoint.md
   
   - Resources:
       - Glossary: resources/glossary.md

@@ -336,9 +336,9 @@ Two quorums of size 5:
 ## Related Concepts
 
 - [Byzantine Generals Problem](byzantine-generals.md) - Proves 3f+1 is necessary
-- [Quorum](../../resources/glossary.md#quorum) - Formal definition
-- [Quorum Intersection](../../resources/glossary.md#quorum-intersection) - Detailed explanation
-- [f (Fault Tolerance Parameter)](../../resources/glossary.md#f-fault-tolerance-parameter) - Role of f in protocols
+- [Quorum](../../../../resources/glossary.md#quorum) - Formal definition
+- [Quorum Intersection](../../../../resources/glossary.md#quorum-intersection) - Detailed explanation
+- [f (Fault Tolerance Parameter)](../../../../resources/glossary.md#f-fault-tolerance-parameter) - Role of f in protocols
 
 ---
 
@@ -352,4 +352,4 @@ Two quorums of size 5:
 ## References
 
 - **Lamport, L., Shostak, R., & Pease, M.** (1982). "The Byzantine Generals Problem." *ACM Transactions on Programming Languages and Systems*, 4(3), 382-401.
-- See [References](../../resources/references.md) for additional mathematical proofs and explanations.
+- See [References](../../../../resources/references.md) for additional mathematical proofs and explanations.

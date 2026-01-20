@@ -197,4 +197,4 @@ In the following sections, you'll learn:
 
 - **Castro, M., & Liskov, B.** (1999). "Practical Byzantine Fault Tolerance." *OSDI '99*.
 - **Castro, M., & Liskov, B.** (2002). "Practical Byzantine Fault Tolerance and Proactive Recovery." *ACM TOCS*, 20(4), 398-461.
-- See [References](../../resources/references.md) for full papers and additional resources.
+- See [References](../../../../resources/references.md) for full papers and additional resources.

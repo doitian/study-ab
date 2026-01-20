@@ -73,16 +73,16 @@ Complete the [Checkpoint](checkpoint.md) to verify your understanding before mov
 
 ## 🔑 Key Concepts Introduced
 
-- [PBFT (Practical Byzantine Fault Tolerance)](../../resources/glossary.md#pbft-practical-byzantine-fault-tolerance)
-- [Primary](../../resources/glossary.md#primary)
-- [Replica](../../resources/glossary.md#replica)
-- [Pre-Prepare](../../resources/glossary.md#pre-prepare)
-- [Prepare](../../resources/glossary.md#prepare)
-- [Commit](../../resources/glossary.md#commit)
-- [View Number](../../resources/glossary.md#view-number)
-- [View Change](../../resources/glossary.md#view-change)
-- [Sequence Number](../../resources/glossary.md#sequence-number)
-- [O(n²) Complexity](../../resources/glossary.md#on-complexity)
+- [PBFT (Practical Byzantine Fault Tolerance)](../../../../resources/glossary.md#pbft-practical-byzantine-fault-tolerance)
+- [Primary](../../../../resources/glossary.md#primary)
+- [Replica](../../../../resources/glossary.md#replica)
+- [Pre-Prepare](../../../../resources/glossary.md#pre-prepare)
+- [Prepare](../../../../resources/glossary.md#prepare)
+- [Commit](../../../../resources/glossary.md#commit)
+- [View Number](../../../../resources/glossary.md#view-number)
+- [View Change](../../../../resources/glossary.md#view-change)
+- [Sequence Number](../../../../resources/glossary.md#sequence-number)
+- [O(n²) Complexity](../../../../resources/glossary.md#on-complexity)
 
 ---
 
@@ -91,7 +91,7 @@ Complete the [Checkpoint](checkpoint.md) to verify your understanding before mov
 **Previous Module**: [Module 01 - Foundation](../01-foundation/README.md)  
 **Next Module**: [Module 03 - HotStuff (Modern BFT)](../03-hotstuff/README.md)
 
-**Resources**: [Glossary](../../resources/glossary.md) | [References](../../resources/references.md)
+**Resources**: [Glossary](../../../../resources/glossary.md) | [References](../../../../resources/references.md)
 
 ---
 

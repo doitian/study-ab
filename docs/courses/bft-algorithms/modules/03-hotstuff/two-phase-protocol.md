@@ -390,6 +390,6 @@ Replicas 1, 2, 3: Verify preCommitQC → Commit "tx_batch_42" → Execute transa
 
 ## 📚 Further Reading
 
-- Original HotStuff paper: [Section 2: The HotStuff Protocol](../../resources/references.md#hotstuff-paper)
-- Threshold signatures: [BLS Signatures](../../resources/references.md#bls-signatures)
-- Quorum certificates: [Decentralized Thoughts article on QCs](../../resources/references.md#quorum-certificates)
+- Original HotStuff paper: [Section 2: The HotStuff Protocol](../../../../resources/references.md#hotstuff-paper)
+- Threshold signatures: [BLS Signatures](../../../../resources/references.md#bls-signatures)
+- Quorum certificates: [Decentralized Thoughts article on QCs](../../../../resources/references.md#quorum-certificates)

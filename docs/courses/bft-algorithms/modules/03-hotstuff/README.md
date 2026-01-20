@@ -71,22 +71,22 @@ Complete the [Checkpoint](checkpoint.md) to verify your understanding before mov
 
 ## 🔑 Key Concepts Introduced
 
-- [HotStuff](../../resources/glossary.md#hotstuff)
-- [Threshold Signature](../../resources/glossary.md#threshold-signature)
-- [Quorum Certificate (QC)](../../resources/glossary.md#quorum-certificate-qc)
-- [Prepare Phase (HotStuff)](../../resources/glossary.md#prepare-phase-hotstuff)
-- [Pre-Commit Phase](../../resources/glossary.md#pre-commit-phase)
-- [Responsiveness](../../resources/glossary.md#responsiveness)
-- [O(n) Complexity](../../resources/glossary.md#on-complexity)
-- [Chained HotStuff](../../resources/glossary.md#chained-hotstuff)
+- [HotStuff](../../../../resources/glossary.md#hotstuff)
+- [Threshold Signature](../../../../resources/glossary.md#threshold-signature)
+- [Quorum Certificate (QC)](../../../../resources/glossary.md#quorum-certificate-qc)
+- [Prepare Phase (HotStuff)](../../../../resources/glossary.md#prepare-phase-hotstuff)
+- [Pre-Commit Phase](../../../../resources/glossary.md#pre-commit-phase)
+- [Responsiveness](../../../../resources/glossary.md#responsiveness)
+- [O(n) Complexity](../../../../resources/glossary.md#on-complexity)
+- [Chained HotStuff](../../../../resources/glossary.md#chained-hotstuff)
 
 ---
 
 ## 📚 Additional Resources
 
 - **Primary Reference**: [HotStuff 2.0 - Decentralized Thoughts](https://decentralizedthoughts.github.io/2023-04-01-hotstuff-2/)
-- **Original Paper**: [HotStuff: BFT Consensus in the Lens of Blockchain](../../resources/references.md#hotstuff-paper) (Yin et al., PODC 2018)
-- **Cached Article**: [Local copy](../../resources/cached-articles/hotstuff-2-decentralized-thoughts.md) (fallback if online version unavailable)
+- **Original Paper**: [HotStuff: BFT Consensus in the Lens of Blockchain](../../../../resources/references.md#hotstuff-paper) (Yin et al., PODC 2018)
+- **Cached Article**: [Local copy](../../../../resources/cached-articles/hotstuff-2-decentralized-thoughts.md) (fallback if online version unavailable)
 
 ---
 

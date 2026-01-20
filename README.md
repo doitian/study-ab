@@ -1,10 +1,16 @@
-# BFT Algorithm Learning Path
+# Study-AB
 
-A comprehensive, progressive learning journey through Byzantine Fault Tolerance (BFT) algorithms, from foundational concepts to modern protocols like HotStuff 2.0.
+Advanced learning paths for distributed systems, consensus algorithms, and blockchain technologies.
 
 ---
 
-## 🎯 What You'll Learn
+## 🎯 Available Learning Paths
+
+### 🔵 BFT Algorithm Learning Path
+
+A comprehensive, progressive learning journey through Byzantine Fault Tolerance (BFT) algorithms, from foundational concepts to modern protocols like HotStuff 2.0.
+
+**What You'll Learn:**
 
 - ✅ **Byzantine Generals Problem** and why BFT matters in distributed systems
 - ✅ **Fault Models**: Crash vs. omission vs. Byzantine faults  
@@ -14,15 +20,23 @@ A comprehensive, progressive learning journey through Byzantine Fault Tolerance 
 
 **Total Learning Time**: 10-15 hours (self-paced)
 
+[**Start BFT Learning Path →**](docs/courses/bft-algorithms/index.md)
+
 ---
 
-## 📚 Learning Modules
+## 🚀 More Courses Coming Soon
+
+Additional learning paths are in development. [Browse all courses →](docs/courses/index.md)
+
+---
+
+## 📚 BFT Learning Modules
 
 | Module | Title | Priority | Time | Status |
 |--------|-------|----------|------|--------|
-| **01** | [Foundation: BFT Fundamentals](docs/modules/01-foundation/README.md) | **P1** | 2-3 hrs | ✅ Complete |
-| **02** | [Classical BFT: PBFT](docs/modules/02-pbft/README.md) | **P2** | 3-4 hrs | ✅ Complete |
-| **03** | [HotStuff 2.0 Deep Dive](docs/modules/03-hotstuff/README.md) | **P1** | 3 hrs | ✅ Complete |
+| **01** | [Foundation: BFT Fundamentals](docs/courses/bft-algorithms/modules/01-foundation/README.md) | **P1** | 2-3 hrs | ✅ Complete |
+| **02** | [Classical BFT: PBFT](docs/courses/bft-algorithms/modules/02-pbft/README.md) | **P2** | 3-4 hrs | ✅ Complete |
+| **03** | [HotStuff 2.0 Deep Dive](docs/courses/bft-algorithms/modules/03-hotstuff/README.md) | **P1** | 3 hrs | ✅ Complete |
 
 ---
 
@@ -58,4 +72,4 @@ Licensed under [CC BY-SA 4.0](LICENSE.md)
 
 ---
 
-**Ready to begin?** 🚀 [**Start Module 01 →**](docs/modules/01-foundation/README.md)
+**Ready to begin?** 🚀 [**Start BFT Learning Path →**](docs/courses/bft-algorithms/index.md)

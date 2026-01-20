@@ -246,10 +246,10 @@ This means:
 
 ## Related Concepts
 
-- [Consensus](../../resources/glossary.md#consensus) - Requires both safety and liveness
-- [Agreement](../../resources/glossary.md#agreement) - Consensus safety property
-- [Termination](../../resources/glossary.md#termination) - Consensus liveness property
-- [Partially Synchronous Network](../../resources/glossary.md#partially-synchronous-network) - Network model for BFT
+- [Consensus](../../../../resources/glossary.md#consensus) - Requires both safety and liveness
+- [Agreement](../../../../resources/glossary.md#agreement) - Consensus safety property
+- [Termination](../../../../resources/glossary.md#termination) - Consensus liveness property
+- [Partially Synchronous Network](../../../../resources/glossary.md#partially-synchronous-network) - Network model for BFT
 
 ---
 
@@ -264,4 +264,4 @@ This means:
 
 - **Lamport, L.** (1977). "Proving the Correctness of Multiprocess Programs." *IEEE Transactions on Software Engineering*, SE-3(2), 125-143.
 - **Fischer, M. J., Lynch, N. A., & Paterson, M. S.** (1985). "Impossibility of Distributed Consensus with One Faulty Process." *Journal of the ACM*, 32(2), 374-382.
-- See [References](../../resources/references.md) for additional resources on safety and liveness.
+- See [References](../../../../resources/references.md) for additional resources on safety and liveness.

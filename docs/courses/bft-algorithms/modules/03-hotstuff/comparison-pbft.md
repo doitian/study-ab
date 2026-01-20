@@ -446,6 +446,6 @@ Message sizes: Small (single QC)
 
 ## 📚 Further Reading
 
-- PBFT paper: [Practical Byzantine Fault Tolerance](../../resources/references.md#pbft-paper)
-- HotStuff paper: [HotStuff: BFT Consensus in the Lens of Blockchain](../../resources/references.md#hotstuff-paper)
-- Threshold signatures: [BLS Signatures Explained](../../resources/references.md#bls-signatures)
+- PBFT paper: [Practical Byzantine Fault Tolerance](../../../../resources/references.md#pbft-paper)
+- HotStuff paper: [HotStuff: BFT Consensus in the Lens of Blockchain](../../../../resources/references.md#hotstuff-paper)
+- Threshold signatures: [BLS Signatures Explained](../../../../resources/references.md#bls-signatures)
